@@ -1,8 +1,8 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const config = require('./config.json')
+const token = require('./token.json')
 
-bot.login(config.token)
+bot.login(token.token)
 
 bot.on('ready', ()=>{
     console.log('aooooo')
@@ -10,6 +10,6 @@ bot.on('ready', ()=>{
 
 bot.on('message', message =>{
     if(message.content.startsWith("$salve")){
-        message.channel.send('Salve ' + message.author.username)
+        message.channel.send(`Salve ${message.author.username}`)
     }
 })
