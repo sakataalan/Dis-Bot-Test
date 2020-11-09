@@ -1,10 +1,8 @@
 const Discord = require('discord.js')
-
 const bot = new Discord.Client()
+const config = require('./config.json')
 
-const token = "Nzc1NDA5OTY4MDM1Mzk3Njgy.X6l6zg.hVMhkHQdsjaj9eCdUjzmUxLTlas"
-
-bot.login(token)
+bot.login(config.token)
 bot.on('ready', ()=>{
     console.log('aooooo')
 })
