@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sakataalan/Dis-Bot-Test/issues"
   },
-  "homepage": "https://github.com/sakataalan/Dis-Bot-Test#readme"
+  "homepage": "https://github.com/sakataalan/Dis-Bot-Test#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
 }
